@@ -1,5 +1,5 @@
-/* Last Verse servis işçisi — sürüm a4cfd30928d1 (pwa-kur.js üretir; elle düzenleme) */
-const ONBELLEK = "lastverse-a4cfd30928d1";
+/* Last Verse servis işçisi — sürüm a67f6ab3f9e8 (pwa-kur.js üretir; elle düzenleme) */
+const ONBELLEK = "lastverse-a67f6ab3f9e8";
 const AG_ONCE = ["./", "index.html", "kasa.json", "oyun.bin"];
 const DOSYALAR = AG_ONCE.concat(["manifest.webmanifest", "ikon-180.png", "ikon-192.png", "ikon-512.png", "ikon-maskable-512.png"]);
 self.addEventListener("install", e => { e.waitUntil(caches.open(ONBELLEK).then(c => c.addAll(DOSYALAR)).then(() => self.skipWaiting())); });
